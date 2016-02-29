@@ -1,0 +1,32 @@
+{
+  "name": "cards-systemjs-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/photomoose/cards-systemjs-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/photomoose/cards-systemjs-course/issues"
+  },
+  "homepage": "https://github.com/photomoose/cards-systemjs-course#readme",
+  "devDependencies": {
+    "jspm": "^0.16.30"
+  },
+  "jspm": {
+    "dependencies": {
+      "underscore": "npm:underscore@^1.8.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
