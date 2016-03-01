@@ -1,8 +1,8 @@
 import Card from "./card.js";
 import _ from "underscore";
 
-export default function Deck() {
-  this.unShuffled = function unShuffled() {
+export default class Deck {
+  unShuffled() {
     return _.chain(Card.ranksInImagesOrder)
       .map(function (rank) {
         return Card.suitsInImagesOrder.map(function (suit) {
@@ -17,9 +17,9 @@ export default function Deck() {
         return new Card(card);
       })
       .value();
-  };
+  }
 
-  this.shuffled = function shuffled() {
+  shuffled() {
     return _.shuffle(this.unShuffled());
-  };
+  }
 }
